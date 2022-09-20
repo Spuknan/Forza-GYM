@@ -7,7 +7,7 @@
 
 /* navbar */
 .navbar__forzalogo {
-    height: 50px;
+    height: 40px;
 }
 
 .nav-item {
@@ -36,6 +36,11 @@
 }
 
 /* section 1 - cards */
+.index__cards--bg {
+    background: rgb(227, 176, 0);
+    background: radial-gradient(circle, rgba(227, 176, 0, 1) 0%, rgba(196, 152, 0, 1) 100%);
+}
+
 .index__cards--title {
     text-align: center;
 }
@@ -74,4 +79,52 @@
         height: auto;
         padding: 2rem 0;
     }
+}
+
+/* contacto */
+.index__contact--bg {
+    background: rgb(227, 176, 0);
+    background: radial-gradient(circle, rgba(227, 176, 0, 1) 0%, rgba(196, 152, 0, 1) 100%);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.index__contact--left {
+    background: #2a2a2a;
+    color: white;
+}
+
+.index__contact--left h3 {
+    padding: 0 0 2rem 0;
+}
+
+.index__contact--left--bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.index__contact--link span{
+    margin: 0 0.5rem;
+}
+
+@media (max-width: 1200px) {
+    #index__contact--map {
+    height: 400px;
+}
+}
+
+#index__contact--logowpp {
+    height: 50px;
+    width: auto;
+}
+
+#index__contact--qr {
+    height: 200px;
+    width: auto;
+}
+
+@media (max-width: 1199.98px) {
+    #index__contact--qr {
+    display: none;
+}
 }
