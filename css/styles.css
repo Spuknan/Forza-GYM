@@ -1,0 +1,18 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+.navbar__forzalogo {
+    height: 50px;
+}
+
+.nav-item {
+    margin: 0 0 0 1rem;
+}
+
+/* INDEX */
+/* hero */
