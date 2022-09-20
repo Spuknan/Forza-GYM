@@ -16,3 +16,62 @@
 
 /* INDEX */
 /* hero */
+.index__hero {
+    background-image: url(../img/6.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    box-shadow: inset 0 0 0 5000px rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+}
+
+.index__hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+}
+
+.index__hero span {
+    color: #e3b000;
+}
+
+/* section 1 - cards */
+.index__cards--title {
+    text-align: center;
+}
+
+/* section 2 - app */
+.index__app--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+}
+
+.index__app--applogo {
+    max-height: 50px;
+    margin: 0 2rem 0 0;
+}
+
+.index__app--mockup {
+    position: relative;
+    justify-self: end;
+    height: 300px;
+    top: -50px;
+    overflow: hidden;
+}
+
+@media (max-width: 992px) {
+    .index__app--mockup {
+        display: none;
+    }
+
+    .index__app--container {
+        justify-content: center;
+        text-align: center;
+        height: auto;
+        padding: 2rem 0;
+    }
+}
