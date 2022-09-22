@@ -7,7 +7,7 @@
 :root {
     --forza_yellow: #f5bb00;
     --forza_white: #f5f5f5;
-    --forza_gray: #272727;
+    --forza_grey: #272727;
 }
 
 
@@ -17,6 +17,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
 }
 
 a {
@@ -74,7 +83,7 @@ button {
     background: var(--forza_yellow);
     border: 2px solid var(--forza_yellow);
     text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
-    color: var(--forza_gray);
+    color: var(--forza_grey);
     font-weight: 500;
     text-align: center;
     text-decoration: none;
@@ -100,8 +109,8 @@ button {
 
 /* primary light */
 .forza-btn-primary-light {
-    background: var(--forza_gray);
-    border: 2px solid var(--forza_gray);
+    background: var(--forza_grey);
+    border: 2px solid var(--forza_grey);
     text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.8);
     color: var(--forza_white);
     text-align: center;
@@ -159,9 +168,9 @@ button {
 /* secondary light */
 .forza-btn-secondary-light {
     background: none;
-    border: 2px solid var(--forza_gray);
+    border: 2px solid var(--forza_grey);
     text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.8);
-    color: var(--forza_gray);
+    color: var(--forza_grey);
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -210,7 +219,7 @@ button {
     background: none;
     border: none;
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
-    color: var(--forza_gray);
+    color: var(--forza_grey);
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -279,7 +288,7 @@ nav.scrolled {
 
 /* footer */
 .footer__bg {
-    background: var(--forza_gray);
+    background: var(--forza_grey);
 }
 
 .footer__links a {
@@ -441,7 +450,7 @@ footer ul li a:hover {
 }
 
 .index__cards--more a {
-    color: var(--forza_gray);
+    color: var(--forza_grey);
 }
 
 .index__cards--img:hover .index__cards--more {
@@ -648,7 +657,7 @@ footer ul li a:hover {
 
 .nosotros__cards--container .cnt-block {
     width: 100%;
-    background: var(--forza_gray);
+    background: var(--forza_grey);
     padding: 30px 20px;
     text-align: center;
     margin: 0 0 28px;
@@ -683,7 +692,7 @@ footer ul li a:hover {
 
 /* cta */
 #nosotros__cta {
-    background: var(--forza_gray);
+    background: var(--forza_grey);
     color: var(--forza_white);
 }
 
@@ -721,3 +730,68 @@ footer ul li a:hover {
     text-align: right;
 }
 
+/* ACTIVIDADES */
+/* hero */
+#actividades__hero {
+    background-image: url(../img/bg-texture.jpg);
+    background-size: cover;
+    box-shadow: inset 0 0 0 5000px rgba(0, 0, 0, 0.5);
+}
+
+.actividades__hero--container {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--forza_white);
+}
+
+@media (max-width: 768px) {
+    .actividades__hero--container {
+        padding: 5rem 1rem 1rem 1rem;
+    }
+}
+
+.actividades__hero--title h1 {
+    font-weight: 700;
+}
+
+.actividades__hero--title span {
+    color: var(--forza_yellow);
+}
+
+.actividades__hero--icon {
+    color: var(--forza_yellow);
+}
+
+/* actividad 1 */
+.actividades__actyellow {
+    background: var(--forza_yellow);
+    min-height: 30vh;
+    padding: 3rem 0;
+}
+
+.actividades__actgrey {
+    background: var(--forza_grey);
+    min-height: 30vh;
+    padding: 3rem 0;
+    color: white;
+}
+
+
+.actividades__act--descripcion h2 {
+    font-weight: 700;
+}
+
+.actividades__act--horarios {
+    font-size: 0.9rem;
+}
+
+.actividades__act--dia {
+    transition: 0.3s ease;
+}
+
+.actividades__act--dia:hover {
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.2);
+}
