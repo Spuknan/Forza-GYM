@@ -773,8 +773,7 @@ footer ul li a:hover {
 
 .actividades__actgrey {
     background: var(--forza_grey);
-    min-height: 30vh;
-    padding: 3rem 0;
+    padding: 5rem 0;
     color: white;
 }
 
