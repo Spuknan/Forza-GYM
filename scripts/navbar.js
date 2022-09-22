@@ -1,3 +1,4 @@
+/* navbar scroll */
 var navbar = document.querySelector("nav");
 
 window.onscroll = function () {
@@ -7,3 +8,13 @@ window.onscroll = function () {
         navbar.classList.remove("scrolled");
     }
 };
+
+/* scroll reveal */
+
+ScrollReveal({
+    reset: true,
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+})
+).reveal('.index__cards--row');
