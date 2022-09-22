@@ -1,38 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Forza GYM</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="../css/styles.css"/>
-  </head>
 
-  <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top px-5">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="../img/FORZALOGO.png" class="navbar__forzalogo" alt=""/>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forza GYM</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="../css/styles.css" /> <!-- custom styles -->
+  <script src="../scripts/scrollreveal.js"></script> <!-- scroll reveal -->
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid padding-def">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/FORZALOGO.png" class="navbar__forzalogo" alt="" />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+              <a class="nav-link active" href="../pages/nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Actividades</a>
+              <a class="nav-link dropdown-toggle" href="../pages/actividades.html" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Actividades</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Actividad 1</a></li>
-                <li><a class="dropdown-item" href="#">Actividad 2</a></li>
-                <li><a class="dropdown-item" href="#">Actividad 3</a></li>
+                <li>
+                  <a class="dropdown-item" href="../pages/actividades.html#actividad-1">Actividad 1</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../pages/actividades.html#actividad-2">Actividad 2</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../pages/actividades.html#actividad-3">Actividad 3</a>
+                </li>
               </ul>
             </li>
             <li class="nav-item">
@@ -47,146 +60,206 @@
         </div>
       </div>
     </nav>
+  </header>
 
-    <main class="padding-def" id="nosotros__hero">
-      <!-- HERO -->
-      <div>
-        <h1>Lorem ipsum <span>dolor</span> sit amet.</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quia
-          reiciendis praesentium atque qui. Sed harum veritatis similique
-          laborum, magni ratione dolores itaque consequuntur quaerat, est omnis
-          accusamus, nihil aspernatur.
-        </p>
-        <a href="#">
-          <button class="btn-1-out">Button</button>
-        </a>
-      </div>
-    </main>
-
-    <section id="equipo" class="padding-def">
-      <div class="equipo__title">
-        <h2>CONOCÉ A NUESTRO EQUIPO</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-          eveniet voluptate nihil, perferendis, aliquam, necessitatibus
-          repudiandae voluptates illum natus voluptatibus commodi nisi non
-          beatae eum facere corrupti voluptatem. Facere, enim.
-        </p>
-      </div>
-      <div class="card__container">
-        <div class="card__bg">
-          <img src="../img/person-in-sport-gym-using-kettlebells.jpg" alt="" />
-          <div class="card__info">
-            <h2>Nombre</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
-              doloribus omnis, cumque sapiente deleniti nostrum natus suscipit
-              eius qui quibusdam distinctio sit temporibus repellat delectus
-              eligendi facilis recusandae voluptas soluta.
-            </p>
+  <main>
+    <!-- HERO -->
+    <section id="nosotros__hero">
+      <div class="container-fluid nosotros__hero padding-def text-md-start">
+        <div class="col">
+          <div class="row">
+            <h1 class="scroll-fade">
+              LOREM IPSUM
+              <div><span class="nosotros__hero--yellowtext">DOLOR</span></div>
+            </h1>
           </div>
-        </div>
-        <div class="card__bg">
-          <img src="../img/person-in-sport-gym-using-kettlebells.jpg" alt="" />
-          <div class="card__info">
-            <h2>Nombre</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
-              doloribus omnis, cumque sapiente deleniti nostrum natus suscipit
-              eius qui quibusdam distinctio sit temporibus repellat delectus
-              eligendi facilis recusandae voluptas soluta.
-            </p>
-          </div>
-        </div>
-        <div class="card__bg">
-          <img src="../img/person-in-sport-gym-using-kettlebells.jpg" alt="" />
-          <div class="card__info">
-            <h2>Nombre</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
-              doloribus omnis, cumque sapiente deleniti nostrum natus suscipit
-              eius qui quibusdam distinctio sit temporibus repellat delectus
-              eligendi facilis recusandae voluptas soluta.
-            </p>
-          </div>
-        </div>
-        <div class="card__bg">
-          <img src="../img/person-in-sport-gym-using-kettlebells.jpg" alt="" />
-          <div class="card__info">
-            <h2>Nombre</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
-              doloribus omnis, cumque sapiente deleniti nostrum natus suscipit
-              eius qui quibusdam distinctio sit temporibus repellat delectus
-              eligendi facilis recusandae voluptas soluta.
-            </p>
+          <div class="container-fluid my-2 scroll-fade">
+            <a href="#">
+              <button class="forza-btn-primary">
+                <span class="custom-btn">CTA 1</span>
+              </button>
+            </a>
+            <a href="#">
+              <button class="forza-btn-secondary ms-3">
+                <span class="custom-btn">CTA 2</span>
+              </button>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="mision-vision">
-      <!-- MISION Y VISION -->
-      <div class="padding-def">
-        <div id="mision">
-          <h2>MISIÓN</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
-            ut molestias, et voluptatibus fugit sed qui vel aliquid, dolorem
-            facere recusandae ratione esse repellendus odio adipisci illo
-            ducimus assumenda at. Nemo, enim velit quibusdam officia error
-            aliquam cumque, culpa quia accusantium iste maxime a sint hic illo
-            itaque, exercitationem ipsam asperiores amet? Id nesciunt sunt
-            labore. Repellendus sapiente eaque a.
-          </p>
+    <!-- CARDS -->
+    <section id="nosotros__cards" class="padding-def py-5">
+      <div class="container-fluid scroll-updown">
+        <div class="row text-center pt-4">
+          <h2>CONOCÉ A NUESTRO EQUIPO DE TRABAJO</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quaerat nostrum sint odio odit vero
+            perferendis est voluptate cupiditate doloremque?</p>
         </div>
-
-        <div id="vision">
-          <h2>MISIÓN</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
-            ut molestias, et voluptatibus fugit sed qui vel aliquid, dolorem
-            facere recusandae ratione esse repellendus odio adipisci illo
-            ducimus assumenda at. Nemo, enim velit quibusdam officia error
-            aliquam cumque, culpa quia accusantium iste maxime a sint hic illo
-            itaque, exercitationem ipsam asperiores amet? Id nesciunt sunt
-            labore. Repellendus sapiente eaque a.
-          </p>
+      </div>
+      <div class="nosotros__cards--container padding-def scroll-downup">
+        <div class="container">
+          <ul class="row">
+            <li>
+              <div class="cnt-block equal-hight" style="height: 350px;">
+                <figure><img src="../img/profesional1.jpg" class="img-responsive" alt=""></figure>
+                <h3>Profesional 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur tempore, sint cumque dolore</p>
+              </div>
+            </li>
+            <li>
+              <div class="cnt-block equal-hight" style="height: 350px;">
+                <figure><img src="../img/profesional2.jpg" class="img-responsive" alt="">
+                </figure>
+                <h3>Profesional 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur tempore, sint cumque dolore</p>
+              </div>
+            </li>
+            <li>
+              <div class="cnt-block equal-hight" style="height: 350px;">
+                <figure><img src="../img/profesional3.jpg" class="img-responsive" alt="">
+                </figure>
+                <h3>Profesional 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur tempore, sint cumque dolore</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <footer class="padding-def">
-      <div class="footer__socials">
-        <div class="footer__socials-item">
-          <a href="#">
-            <i class="fa-brands fa-instagram"></i>
-            <span>instagram.com/forzagym.ldz</span>
-          </a>
-        </div>
-        <div class="footer__socials-item">
-          <a href="#">
-            <i class="fa-solid fa-phone"></i>
-            <span>+ 549 11 5035 8772</span>
-          </a>
-        </div>
-        <div class="footer__socials-item">
-          <a href="#">
-            <i class="fa-solid fa-location-dot"></i>
-            <span>Hipólito Yrigoyen 1234 - Lomas de Zamora</span>
-          </a>
-        </div>
-        <div class="footer__socials-item">
-          <a href="../pages/proveedores.html">
-            <button class="btn-1-out"><i class="fa-solid fa-chalkboard-user"></i>Proveedores</button>
-          </a>
+    <!-- CTA -->
+    <aside id="nosotros__cta">
+      <div class="container-fluid py-5 padding-def">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h3>¡ANOTATE A TU PRIMERA CLASE GRATIS!</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, sint maiores! Voluptatibus eum provident
+              ex repellendus.</p>
+          </div>
+          <div class="col-12 col-md-6 d-flex justify-content-md-end nosotros__cta--btn">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc5_0VHPKaR9YsB-hZ6y8H8dyYT3j4uwfmzIOI8ynkEJODjZw/viewform">
+              <button class="forza-btn-primary">
+                <span class="custom-btn">LLENA EL FORMULARIO</span>
+              </button>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="divider"></div>
-      <div class="footer__copy">
-        <p><p>ForzaGYM&copy; 2022</p></p>
+    </aside>
+
+    <!-- MISION VISION -->
+    <section id="nosotros__mision-vision" class="py-5 px-2 px-md-0">
+      <div class="row nosotros__mision-vision--mision d-flex mb-3 scroll-leftright">
+        <div class="col padding-def col-12 col-lg-6">
+          <h3 class="fw-bolder">MISIÓN</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nisi quidem facilis laboriosam
+            blanditiis quae minima ratione eius quos. Accusamus ab commodi iure fugit facilis autem, voluptatem sapiente
+            cum est?</p>
+        </div>
+        <div class="col col-md-6 d-lg-none"></div>
       </div>
-    </footer>
-  </body>
+      <div class="row nosotros__mision-vision--vision d-flex flex-row-reverse mt-3 scroll-rightleft">
+        <div class="col padding-def col-12 col-lg-6">
+          <h3 class="fw-bolder">VISIÓN</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nisi quidem facilis laboriosam
+            blanditiis quae
+            minima ratione eius quos. Accusamus ab commodi iure fugit facilis autem, voluptatem sapiente cum est?</p>
+        </div>
+        <div class="col col-md-6 d-lg-none"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <div class="container-fluid text-light padding-def footer__bg">
+    <div class="container-fluid px-5">
+      <footer class="py-5">
+        <div class="row d-flex justify-content-between">
+          <div class="col-6 col-md-2 mb-4 footer__links">
+            <h5 class="fw-bold">Mapa del sitio</h5>
+            <a href="../index.html">
+              <p>Inicio</p>
+            </a>
+            <a href="./nosotros.html">
+              <p>Nosotros</p>
+            </a>
+            <a href="#" class="d-none">
+              <p>Galería</p>
+            </a>
+            <a href="./precios.html">
+              <p>Precios</p>
+            </a>
+            <a href="./proveedores.html">
+              <p>Proveedores</p>
+            </a>
+          </div>
+          <div class="col-6 col-md-2 mb-4 footer__links">
+            <h5 class="fw-bold">Actividades</h5>
+            <a href="#">
+              <p>Actividad 1</p>
+            </a>
+            <a href="#">
+              <p>Actividad 2</p>
+            </a>
+            <a href="#">
+              <p>Actividad 3</p>
+            </a>
+            <a href="#">
+              <p>Actividad 4</p>
+            </a>
+            <a href="#">
+              <p>Actividad 5</p>
+            </a>
+          </div>
+          <div class="col-md-6 offset-md-1 mb-4 align-self-center">
+            <form class="text-md-start" style="text-align: center;">
+              <h5>Suscribite a nuestro Newsletter!</h5>
+              <p>
+                Recibí todas las novedades y las mejores ofertas todas las
+                semanas!
+              </p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email</label>
+                <input id="newsletter1" type="email" class="form-control" placeholder="Email address" />
+                <button class="custom-btn forza-btn-primary" type="button">
+                  Enviar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top footer__copy">
+          <p>© 2022 ForzaGYM. Todos los derechos reservados.</p>
+          <ul class="list-unstyled d-flex">
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-phone"></i></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+
+<!-- SCRIPTS -->
+<script src="../scripts/navbar-scroll.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/523b2e5bc2.js" crossorigin="anonymous"></script>
+<script src="../scripts/scrollreveal-custom.js"></script>
+</body>
+
+</html>
+
 </html>
