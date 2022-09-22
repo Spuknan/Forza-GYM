@@ -268,13 +268,10 @@ nav.scrolled {
 
     nav .dropdown {
         text-align: center;
-<<<<<<< HEAD
     }
 
     nav .dropdown-item:focus {
         max-width: 45vw;
-=======
->>>>>>> cc7f0725d536cc3a4a08b98d453a74452d0e3815
     }
 }
 
