@@ -1,0 +1,204 @@
+/* NOSOTROS */
+/* hero */
+.nosotros__hero {
+   background-image: url(../img/person-in-sport-gym-using-kettlebells.jpg);
+   min-height: 50vh;
+   background-size: cover;
+   box-shadow: inset 0 0 0 5000px rgba(0, 0, 0, 0.8);
+   display: flex;
+   align-items: center;
+   text-align: center;
+}
+
+.nosotros__hero h1 {
+   font-size: 4rem;
+   font-weight: 700;
+   color: $forza-white;
+}
+
+.nosotros__hero--yellowtext {
+   color: $forza-yellow;
+}
+
+/* cards */
+#nosotros__cards {
+   background: rgb(227, 176, 0);
+   background: radial-gradient(circle,
+         rgba(227, 176, 0, 1) 0%,
+         rgba(196, 152, 0, 1) 100%);
+}
+
+#nosotros__cards h2 {
+   font-weight: 700;
+}
+
+#nosotros__cards p {
+   margin: auto;
+}
+
+@media (min-width: 768px) {
+   #nosotros__cards p {
+      max-width: 700px;
+   }
+}
+
+#nosotros__cards ul {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   margin-top: 2rem;
+}
+
+#nosotros__cards ul li {
+   max-width: 300px;
+}
+
+.nosotros__cards--container .cnt-block:hover {
+   border: 0;
+   transform: scale(1.05);
+   box-shadow: -5px 5px 20px rgba(0, 0, 0, 1);
+}
+
+.nosotros__cards--container .cnt-block {
+   width: 100%;
+   background: $forza-grey;
+   padding: 30px 20px;
+   text-align: center;
+   margin: 0 0 28px;
+   transition: 0.3s ease;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nosotros__cards--container .cnt-block img {
+   object-fit: cover;
+   width: 148px;
+   height: 148px;
+   border-radius: 100%;
+   box-shadow: 0px 0px 15px 1px rgba(245, 187, 0, 0.5);
+   -webkit-box-shadow: 0px 0px 15px 1px rgba(245, 187, 0, 0.5);
+   -moz-box-shadow: 0px 0px 15px 1px rgba(245, 187, 0, 0.5);
+}
+
+.nosotros__cards--container .cnt-block h3 {
+   color: $forza-white;
+   font-size: 1.3rem;
+   font-weight: 700;
+   padding: 6px 0;
+   text-transform: uppercase;
+}
+
+.nosotros__cards--container .cnt-block p {
+   color: $forza-white;
+   font-size: 0.9rem;
+   line-height: 20px;
+   font-weight: 400;
+}
+
+/* cta */
+#nosotros__cta {
+   background: $forza-grey;
+   color: $forza-white;
+}
+
+#nosotros__cta h3 {
+   color: $forza-yellow;
+   font-weight: 700;
+}
+
+@media (min-width: 768px) {
+   .nosotros__cta--btn button {
+      height: 100%;
+   }
+
+   .nosotros__cta--btn a {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+   }
+}
+
+/* mision vision */
+#nosotros__mision-vision {
+   background: rgb(227, 176, 0);
+   background: radial-gradient(circle,
+         rgba(227, 176, 0, 1) 0%,
+         rgba(196, 152, 0, 1) 100%);
+}
+
+.nosotros__mision-vision--mision {
+   max-width: 100%;
+   margin: auto;
+}
+
+.nosotros__mision-vision--vision {
+   max-width: 100%;
+   margin: auto;
+   text-align: right;
+}
+
+/* ACTIVIDADES */
+/* hero */
+#actividades__hero {
+   background-image: url(../img/bg-texture.jpg);
+   background-size: cover;
+   box-shadow: inset 0 0 0 5000px rgba(0, 0, 0, 0.5);
+}
+
+.actividades__hero--container {
+   min-height: 50vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: $forza-white;
+}
+
+@media (max-width: 768px) {
+   .actividades__hero--container {
+      padding: 5rem 1rem 1rem 1rem;
+   }
+}
+
+.actividades__hero--title h1 {
+   font-weight: 700;
+}
+
+.actividades__hero--title span {
+   color: $forza-yellow;
+}
+
+.actividades__hero--icon {
+   color: $forza-yellow;
+}
+
+/* actividad 1 */
+.actividades__actyellow {
+   background: $forza-yellow;
+   min-height: 30vh;
+   padding: 3rem 0;
+}
+
+.actividades__actgrey {
+   background: $forza-grey;
+   padding: 5rem 0;
+   color: white;
+}
+
+.actividades__act--descripcion h2 {
+   font-weight: 700;
+}
+
+.actividades__act--horarios {
+   font-size: 0.9rem;
+}
+
+.actividades__act--dia {
+   transition: 0.3s ease;
+}
+
+.actividades__act--dia:hover {
+   font-weight: 700;
+   background: rgba(255, 255, 255, 0.2);
+}

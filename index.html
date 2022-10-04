@@ -2,363 +2,353 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Forza GYM</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> <!-- bootstrap -->
-  <link rel="stylesheet" href="./css/styles.css" /> <!-- custom styles -->
-  <script src="./scripts/scrollreveal.js"></script> <!-- scroll reveal -->
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Forza GYM</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   <!-- bootstrap -->
+   <link rel="stylesheet" href="./sass/main.css" /> <!-- custom styles -->
+   <script src="./scripts/scrollreveal.js"></script> <!-- scroll reveal -->
 </head>
 
 <body>
-  <!-- NAVBAR -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <div class="container-fluid padding-def">
-        <a class="navbar-brand" href="./index.html">
-          <img src="./img/FORZALOGO.png" class="navbar__forzalogo" alt="" />
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="./pages/actividades.html" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">Actividades</a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="./pages/actividades.html">Todas</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/actividades.html#actividades__act1">Actividad 1</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/actividades.html#actividades__act2">Actividad 2</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/actividades.html#actividades__act3">Actividad 3</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Precios</a>
-            </li>
-            <a href="#contacto">
-              <button class="forza-btn-primary nav-item ms-4">
-                <span class="custom-btn">Contacto</span>
-              </button>
+   <!-- NAVBAR -->
+   <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+         <div class="container-fluid padding-def">
+            <a class="navbar-brand" href="./index.html">
+               <img src="./img/FORZALOGO.png" class="navbar__forzalogo" alt="" />
             </a>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <!-- HERO -->
-    <section id="hero">
-      <div class="container-fluid index__hero padding-def text-md-start">
-        <div class="col">
-          <div class="row">
-            <h1 class="scroll-updown">
-              LOREM IPSUM
-              <div><span class="index__hero--yellowtext">DOLOR</span></div>
-            </h1>
-          </div>
-          <div class="container-fluid my-2 scroll-updown">
-            <a href="#">
-              <button class="forza-btn-primary">
-                <span class="custom-btn">CTA 1</span>
-              </button>
-            </a>
-            <a href="#">
-              <button class="forza-btn-secondary ms-3">
-                <span class="custom-btn">CTA 2</span>
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CARDS -->
-    <section id="cards" class="index__cards--bg">
-      <div class="card-group padding-def">
-        <div class="index__cards--row scroll-updown">
-          <div class="index__cards--img">
-            <img src="./img/1.jpg" alt="">
-            <div class="index__cards--details">
-              <h2>Actividad 1</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ipsa.</p>
-              <div class="index__cards--more">
-                <a href="#">Ver más</a>
-                <div class="index__cards--iconlinks">
-                  <a href="#"><i class="fas fa-dumbbell"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="index__cards--row scroll-updown">
-          <div class="index__cards--img">
-            <img src="./img/6.jpg" alt="">
-            <div class="index__cards--details">
-              <h2>ACTIVIDAD 2</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ipsa.</p>
-              <div class="index__cards--more">
-                <a href="#">Ver más</a>
-                <div class="index__cards--iconlinks">
-                  <a href="#"><i class="fas fa-dumbbell"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="index__cards--row scroll-updown">
-          <div class="index__cards--img">
-            <img src="./img/8.jpg" alt="">
-            <div class="index__cards--details">
-              <h2>ACTIVIDAD 3</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ipsa.</p>
-              <div class="index__cards--more">
-                <a href="#">Ver más</a>
-                <div class="index__cards--iconlinks">
-                  <a href="#"><i class="fas fa-dumbbell"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid px-5 py-4 index__cards--title animate__animated animate__fadeInUp">
-        <h2>LOREM IPSUM, DOLOR SIT AMET CONSECTETUR ADIPSICING ELIT.</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-          at, quae sunt veniam minus dolorem.
-        </p>
-        <div>
-          <a href="#">
-            <button class="forza-btn-primary-light">
-              <span class="custom-btn">CTA 1</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+               aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
             </button>
-          </a>
-          <a href="#">
-            <button class="forza-btn-secondary-light">
-              <span class="custom-btn">CTA 1</span>
-            </button>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA APP -->
-    <aside id="cta">
-      <div class="bg-dark text-light">
-        <div class="index__app--container">
-          <div class="padding-def">
-            <h3>Lorem ipsum app</h3>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+               <ul class="navbar-nav">
+                  <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="./pages/actividades.html" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Actividades</a>
+                     <ul class="dropdown-menu">
+                        <li>
+                           <a class="dropdown-item" href="./pages/actividades.html">Todas</a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="./pages/actividades.html#actividades__act1">Actividad 1</a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="./pages/actividades.html#actividades__act2">Actividad 2</a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="./pages/actividades.html#actividades__act3">Actividad 3</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link disabled" href="#">Precios</a>
+                  </li>
+                  <a href="#contacto">
+                     <button class="forza-btn-primary nav-item ms-4">
+                        <span class="custom-btn">Contacto</span>
+                     </button>
+                  </a>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <main>
+      <!-- HERO -->
+      <section id="hero">
+         <div class="container-fluid index__hero padding-def text-md-start">
+            <div class="col">
+               <div class="row">
+                  <h1 class="scroll-updown">
+                     LOREM IPSUM
+                     <div>
+                        <span class="index__hero--yellowtext">DOLOR</span>
+                     </div>
+                  </h1>
+               </div>
+               <div class="container-fluid my-2 scroll-updown">
+                  <a href="#">
+                     <button class="forza-btn-primary">
+                        <span class="custom-btn">CTA 1</span>
+                     </button>
+                  </a>
+                  <a href="#">
+                     <button class="forza-btn-secondary ms-3">
+                        <span class="custom-btn">CTA 2</span>
+                     </button>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- CARDS -->
+      <section id="cards" class="index__cards--bg">
+         <div class="card-group padding-def">
+            <div class="index__cards--row scroll-updown">
+               <div class="index__cards--img">
+                  <img src="./img/1.jpg" alt="">
+                  <div class="index__cards--details">
+                     <h2>Actividad 1</h2>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ipsa.</p>
+                     <div class="index__cards--more">
+                        <a href="#">Ver más</a>
+                        <div class="index__cards--iconlinks">
+                           <a href="#"><i class="fas fa-dumbbell"></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="index__cards--row scroll-updown">
+               <div class="index__cards--img">
+                  <img src="./img/6.jpg" alt="">
+                  <div class="index__cards--details">
+                     <h2>ACTIVIDAD 2</h2>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ipsa.</p>
+                     <div class="index__cards--more">
+                        <a href="#">Ver más</a>
+                        <div class="index__cards--iconlinks">
+                           <a href="#"><i class="fas fa-dumbbell"></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="index__cards--row scroll-updown">
+               <div class="index__cards--img">
+                  <img src="./img/8.jpg" alt="">
+                  <div class="index__cards--details">
+                     <h2>ACTIVIDAD 3</h2>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ipsa.</p>
+                     <div class="index__cards--more">
+                        <a href="#">Ver más</a>
+                        <div class="index__cards--iconlinks">
+                           <a href="#"><i class="fas fa-dumbbell"></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid px-5 py-4 index__cards--title animate__animated animate__fadeInUp">
+            <h2>LOREM IPSUM, DOLOR SIT AMET CONSECTETUR ADIPSICING ELIT.</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque
-              corrupti reprehenderit.
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+               at, quae sunt veniam minus dolorem.
             </p>
             <div>
-              <a href="#">
-                <img src="./img/appstore.png" alt="" class="index__app--applogo my-1" />
-              </a>
-              <a href="#">
-                <img src="./img/googleplay.png" alt="" class="index__app--applogo my-1" />
-              </a>
+               <a href="#">
+                  <button class="forza-btn-primary-light">
+                     <span class="custom-btn">CTA 1</span>
+                  </button>
+               </a>
+               <a href="#">
+                  <button class="forza-btn-secondary-light">
+                     <span class="custom-btn">CTA 1</span>
+                  </button>
+               </a>
             </div>
-          </div>
-          <img src="./img/mockup-phone.png" alt="" class="index__app--mockup" />
-        </div>
+         </div>
+      </section>
+      <!-- CTA APP -->
+      <aside id="cta">
+         <div class="bg-dark text-light">
+            <div class="index__app--container">
+               <div class="padding-def">
+                  <h3>Lorem ipsum app</h3>
+                  <p>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque
+                     corrupti reprehenderit.
+                  </p>
+                  <div>
+                     <a href="#">
+                        <img src="./img/appstore.png" alt="" class="index__app--applogo my-1" />
+                     </a>
+                     <a href="#">
+                        <img src="./img/googleplay.png" alt="" class="index__app--applogo my-1" />
+                     </a>
+                  </div>
+               </div>
+               <img src="./img/mockup-phone.png" alt="" class="index__app--mockup" />
+            </div>
+         </div>
+      </aside>
+      <!-- CONTACTO / Cambiar a mobile first -->
+      <section id="contacto">
+         <div class="container-fluid index__contact--bg padding-def py-5 index__contact">
+            <div class="index__contact--left col-xl-6 col-sm-12 p-5 scroll-fade">
+               <h3>Lorem ipsum</h3>
+               <div class="mb-3">
+                  <label for="" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="" />
+               </div>
+               <div class="mb-3">
+                  <label for="" class="form-label">Email</label>
+                  <input type="email" class="form-control" name="" id="" aria-describedby="helpId" placeholder="" />
+               </div>
+               <div class="mb-3">
+                  <label for="" class="form-label">Motivo de contacto</label>
+                  <select class="form-control form-select" name="" id="">
+                     <option>Motivo 1</option>
+                     <option>Motivo 2</option>
+                     <option>Motivo 3</option>
+                  </select>
+               </div>
+               <div class="mb-3">
+                  <label for="" class="form-label">Mensaje</label>
+                  <textarea class="form-control" name="" id="" rows="3"></textarea>
+               </div>
+               <div class="index__contact--left--bottom d-flex flex-wrap-reverse">
+                  <div>
+                     <div class="row">
+                        <div class="col index__contact--socials forza-btn-terciary">
+                           <a href="#" class="d-flex flex-nowrap align-items-center">
+                              <i class="fa-brands fa-instagram"></i>
+                              <span class="m-2">instagram.com.ar</span>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col index__contact--socials">
+                           <a href="#" class="d-flex flex-nowrap align-items-center forza-btn-terciary">
+                              <i class="fa-solid fa-phone"></i>
+                              <span class="m-2">+549 11 5035 8772</span>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col index__contact--socials">
+                           <a href="#" class="d-flex flex-nowrap align-items-center forza-btn-terciary text-start">
+                              <i class="fa-solid fa-location-dot"></i>
+                              <span class="m-2">H. Yrigoyen 9183 - Lomas de Zamora</span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="index__contact--left--bottom--button">
+                     <button type="submit" class="forza-btn-primary mb-5">
+                        <span class="custom-btn">Enviar</span>
+                     </button>
+                  </div>
+               </div>
+            </div>
+            <div class="index__contact--right col-xl-6 col-sm-12 scroll-fade">
+               <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52468.61718323279!2d-58.408184450459615!3d-34.72311979330663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd3e308b11981%3A0xf4136a28ab618109!2sForza%20GYM!5e0!3m2!1ses-419!2sar!4v1663640085320!5m2!1ses-419!2sar"
+                  width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade" id="index__contact--map"></iframe>
+            </div>
+            <div class="container-fluid d-flex">
+               <div class="index__wpp--cta row">
+                  <div class="row col-12 col-xl-6 p-5">
+                     <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                     <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Temporibus perspiciatis alias repellendus sequi repellat nemo
+                        magnam nobis.
+                     </p>
+                     <a href="#">
+                        <img src="./img/Whatsapp-logo.png" alt="" id="index__contact--logowpp" />
+                     </a>
+                  </div>
+                  <div class="col col-6 d-flex justify-content-end align-items-center">
+                     <img src="./img/qr-forza.png" alt="" id="index__contact--qr" />
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+   <!-- FOOTER -->
+   <div class="container-fluid text-light padding-def footer__bg">
+      <div class="container-fluid px-5">
+         <footer class="py-5">
+            <div class="row d-flex justify-content-between">
+               <div class="col-6 col-md-2 mb-4 footer__links">
+                  <h5 class="fw-bold">Mapa del sitio</h5>
+                  <a href="./index.html">
+                     <p>Inicio</p>
+                  </a>
+                  <a href="./pages/nosotros.html">
+                     <p>Nosotros</p>
+                  </a>
+                  <a href="#" class="d-none">
+                     <p>Galería</p>
+                  </a>
+                  <a href="#">
+                     <p>Precios</p>
+                  </a>
+                  <a href="./pages/proveedores.html">
+                     <p>Proveedores</p>
+                  </a>
+               </div>
+               <div class="col-6 col-md-2 mb-4 footer__links">
+                  <h5 class="fw-bold">Actividades</h5>
+                  <a href="./pages/actividades.html#actividades__act1">
+                     <p>Actividad 1</p>
+                  </a>
+                  <a href="./pages/actividades.html#actividades__act2">
+                     <p>Actividad 2</p>
+                  </a>
+                  <a href="./pages/actividades.html#actividades__act3">
+                     <p>Actividad 3</p>
+                  </a>
+               </div>
+               <div class="col-md-6 offset-md-1 mb-4 align-self-center">
+                  <form class="text-md-start" style="text-align: center;">
+                     <h5>Suscribite a nuestro Newsletter!</h5>
+                     <p>
+                        Recibí todas las novedades y las mejores ofertas todas las
+                        semanas!
+                     </p>
+                     <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email</label>
+                        <input id="newsletter1" type="email" class="form-control" placeholder="Email address" />
+                        <button class="custom-btn forza-btn-primary" type="button">
+                           Enviar
+                        </button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top footer__copy">
+               <p>© 2022 ForzaGYM. Todos los derechos reservados.</p>
+               <ul class="list-unstyled d-flex">
+                  <li>
+                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="fa-solid fa-phone"></i></a>
+                  </li>
+               </ul>
+            </div>
+         </footer>
       </div>
-    </aside>
-
-    <!-- CONTACTO / Cambiar a mobile first -->
-    <section id="contacto">
-      <div class="container-fluid index__contact--bg padding-def py-5 index__contact">
-        <div class="index__contact--left col-xl-6 col-sm-12 p-5 scroll-fade">
-          <h3>Lorem ipsum</h3>
-          <div class="mb-3">
-            <label for="" class="form-label">Nombre</label>
-            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="" />
-          </div>
-          <div class="mb-3">
-            <label for="" class="form-label">Email</label>
-            <input type="email" class="form-control" name="" id="" aria-describedby="helpId" placeholder="" />
-          </div>
-          <div class="mb-3">
-            <label for="" class="form-label">Motivo de contacto</label>
-            <select class="form-control form-select" name="" id="">
-              <option>Motivo 1</option>
-              <option>Motivo 2</option>
-              <option>Motivo 3</option>
-            </select>
-          </div>
-          <div class="mb-3">
-            <label for="" class="form-label">Mensaje</label>
-            <textarea class="form-control" name="" id="" rows="3"></textarea>
-          </div>
-
-          <div class="index__contact--left--bottom d-flex flex-wrap-reverse">
-            <div>
-              <div class="row">
-                <div class="col index__contact--socials forza-btn-terciary">
-                  <a href="#" class="d-flex flex-nowrap align-items-center">
-                    <i class="fa-brands fa-instagram"></i>
-                    <span class="m-2">instagram.com.ar</span>
-                  </a>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col index__contact--socials">
-                  <a href="#" class="d-flex flex-nowrap align-items-center forza-btn-terciary">
-                    <i class="fa-solid fa-phone"></i>
-                    <span class="m-2">+549 11 5035 8772</span>
-                  </a>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col index__contact--socials">
-                  <a href="#" class="d-flex flex-nowrap align-items-center forza-btn-terciary">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span class="m-2">H. Yrigoyen 9183 - Lomas de Zamora</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="index__contact--left--bottom--button">
-              <button type="submit" class="forza-btn-primary mb-5">
-                <span class="custom-btn">Enviar</span>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="index__contact--right col-xl-6 col-sm-12 scroll-fade">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52468.61718323279!2d-58.408184450459615!3d-34.72311979330663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd3e308b11981%3A0xf4136a28ab618109!2sForza%20GYM!5e0!3m2!1ses-419!2sar!4v1663640085320!5m2!1ses-419!2sar"
-            width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade" id="index__contact--map"></iframe>
-        </div>
-        <div class="container-fluid d-flex">
-          <div class="index__wpp--cta row">
-            <div class="row col-12 col-xl-6 p-5">
-              <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Temporibus perspiciatis alias repellendus sequi repellat nemo
-                magnam nobis.
-              </p>
-              <a href="#">
-                <img src="./img/Whatsapp-logo.png" alt="" id="index__contact--logowpp" />
-              </a>
-            </div>
-            <div class="col col-6 p-5 d-flex justify-content-end align-items-center">
-              <img src="./img/qr-forza.png" alt="" id="index__contact--qr" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <div class="container-fluid text-light padding-def footer__bg">
-    <div class="container-fluid px-5">
-      <footer class="py-5">
-        <div class="row d-flex justify-content-between">
-          <div class="col-6 col-md-2 mb-4 footer__links">
-            <h5 class="fw-bold">Mapa del sitio</h5>
-            <a href="./index.html">
-              <p>Inicio</p>
-            </a>
-            <a href="./pages/nosotros.html">
-              <p>Nosotros</p>
-            </a>
-            <a href="#" class="d-none">
-              <p>Galería</p>
-            </a>
-            <a href="#">
-              <p>Precios</p>
-            </a>
-            <a href="#">
-              <p>Proveedores</p>
-            </a>
-          </div>
-
-          <div class="col-6 col-md-2 mb-4 footer__links">
-            <h5 class="fw-bold">Actividades</h5>
-            <a href="./pages/actividades.html#actividades__act1">
-              <p>Actividad 1</p>
-            </a>
-            <a href="./pages/actividades.html#actividades__act2">
-              <p>Actividad 2</p>
-            </a>
-            <a href="./pages/actividades.html#actividades__act3">
-              <p>Actividad 3</p>
-            </a>
-          </div>
-
-          <div class="col-md-6 offset-md-1 mb-4 align-self-center">
-            <form class="text-md-start" style="text-align: center;">
-              <h5>Suscribite a nuestro Newsletter!</h5>
-              <p>
-                Recibí todas las novedades y las mejores ofertas todas las
-                semanas!
-              </p>
-              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden">Email</label>
-                <input id="newsletter1" type="email" class="form-control" placeholder="Email address" />
-                <button class="custom-btn forza-btn-primary" type="button">
-                  Enviar
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-
-        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top footer__copy">
-          <p>© 2022 ForzaGYM. Todos los derechos reservados.</p>
-          <ul class="list-unstyled d-flex">
-            <li>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-location-dot"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-phone"></i></a>
-            </li>
-          </ul>
-        </div>
-      </footer>
-    </div>
-  </div>
-
-  <script src="./scripts/navbar-scroll.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-    crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/523b2e5bc2.js" crossorigin="anonymous"></script>
-  <script src="./scripts/scrollreveal-custom.js"></script>
+   </div>
+   <script src="./scripts/navbar-scroll.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/523b2e5bc2.js" crossorigin="anonymous"></script>
+   <script src="./scripts/scrollreveal-custom.js"></script>
 </body>
 
 </html>

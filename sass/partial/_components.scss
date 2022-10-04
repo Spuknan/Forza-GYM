@@ -1,0 +1,256 @@
+/* buttons */
+button {
+   padding: 0.3rem 2rem;
+}
+
+.custom-btn {
+   display: inline-block;
+   z-index: 10;
+
+   &:hover {
+      cursor: pointer;
+   }
+}
+
+.forza-btn-primary {
+   background: $forza-yellow;
+   border: 2px solid $forza-yellow;
+   text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+   color: $forza-grey;
+   font-weight: 500;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   transition: 0.2s ease all;
+
+   &:hover {
+      text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+      box-shadow: 0px 0px 15px 1px rgba(245, 187, 0, 0.75);
+      -webkit-box-shadow: 0px 0px 15px 1px rgba(245, 187, 0, 0.75);
+      -moz-box-shadow: 0px 0px 15px 1px rgba(245, 187, 0, 0.75);
+      transform: scale(1.02);
+   }
+
+   &:active {
+      text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+      box-shadow: 0px 0px 7px 1px rgba(245, 187, 0, 0.75);
+      -webkit-box-shadow: 0px 0px 7px 1px rgba(245, 187, 0, 0.75);
+      -moz-box-shadow: 0px 0px 7px 1px rgba(245, 187, 0, 0.75);
+      transform: scale(1.01);
+   }
+}
+
+.forza-btn-primary-light {
+   background: $forza-grey;
+   border: 2px solid $forza-grey;
+   text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.8);
+   color: $forza-white;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   transition: 0.2s ease;
+
+   &:hover {
+      background: #303030;
+      border: 2px solid #303030;
+      text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
+      box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
+      -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
+      transform: scale(1.02);
+   }
+
+   &:active {
+      text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+      box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
+      -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
+      transform: scale(1.01);
+   }
+}
+
+.forza-btn-secondary {
+   background: none;
+   border: 2px solid $forza-yellow;
+   text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.8);
+   color: $forza-yellow;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   transition: 0.2s ease;
+
+   &:hover {
+      text-shadow: 0px 0px 8px rgba(245, 187, 0, 0.1);
+      box-shadow: 0px 0px 15px 1px rgba(245, 187, 0, 0.75);
+      -webkit-box-shadow: 0px 0px 15px 1px rgba(245, 187, 0, 0.75);
+      -moz-box-shadow: 0px 0px 15px 1px rgba(245, 187, 0, 0.75);
+      transform: scale(1.02);
+   }
+
+   &:active {
+      text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+      box-shadow: 0px 0px 7px 1px rgba(245, 187, 0, 0.75);
+      -webkit-box-shadow: 0px 0px 7px 1px rgba(245, 187, 0, 0.75);
+      -moz-box-shadow: 0px 0px 7px 1px rgba(245, 187, 0, 0.75);
+      transform: scale(1.01);
+   }
+}
+
+.forza-btn-secondary-light {
+   background: none;
+   border: 2px solid $forza-grey;
+   text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.8);
+   color: $forza-grey;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   transition: 0.2s ease;
+
+   &:hover {
+      text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6);
+      box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
+      -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
+      transform: scale(1.02);
+   }
+
+   &:active {
+      text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+      box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
+      -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
+      transform: scale(1.01);
+   }
+}
+
+.forza-btn-terciary {
+   background: none;
+   border: none;
+   text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.8);
+   color: $forza-yellow;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   transition: 0.2s ease;
+
+   &:hover {
+      text-shadow: 0px 0px 10px rgba(245, 187, 0, 0.9);
+   }
+
+   &:active {
+      color: #cc9c01;
+      text-shadow: 0px 0px 8px rgba(245, 187, 0, 1);
+   }
+}
+
+/* terciary light */
+
+.forza-btn-terciary-light {
+   background: none;
+   border: none;
+   text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+   color: $forza-grey;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   transition: 0.2s ease;
+
+   &:hover {
+      text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.9);
+   }
+
+   &:active {
+      color: #606060;
+      text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
+   }
+}
+
+
+/* navbar */
+nav {
+   background: linear-gradient(to bottom, #000, #0003 80%, #0000);
+   transition: background 0.4s;
+
+   .navbar__forzalogo {
+      height: 40px;
+   }
+
+   .nav-item {
+      margin: 0 0 0 1rem;
+   }
+
+   .navbar-nav {
+      display: flex;
+      align-items: center;
+   }
+}
+
+nav.scrolled {
+   background: rgba(15, 15, 15, 0.9);
+}
+
+@media (max-width: 991.98px) {
+   nav {
+      background: rgba(15, 15, 15, 0.9);
+
+      .navbar-nav a {
+         margin: 0.5rem;
+      }
+
+      .dropdown-menu {
+         width: 50vw;
+      }
+
+      nav .dropdown {
+         text-align: center;
+
+         &.dropdown-item:focus {
+            max-width: 45vw;
+         }
+      }
+   }
+}
+
+/* footer */
+.footer__bg {
+   background: $forza-grey;
+
+   .footer__links {
+      a {
+         color: $forza-white;
+
+         &:hover {
+            color: $forza-yellow;
+         }
+      }
+
+      h5 {
+         color: $forza-yellow;
+      }
+   }
+
+   #newsletter1 {
+      border-radius: 0;
+
+      &:focus {
+         -webkit-box-shadow: 0px 0px 0px 3px $forza-yellow;
+         box-shadow: 0px 0px 0px 3px $forza-yellow;
+      }
+   }
+
+   ul li a {
+      color: #b6b6b6;
+      margin: 0 1rem;
+      font-size: 1rem;
+      transition: 0.3s ease;
+
+      &:hover {
+         color: $forza-yellow;
+      }
+   }
+
+   .footer__copy {
+      font-size: 0.8rem;
+      color: #b6b6b6;
+   }
+}
