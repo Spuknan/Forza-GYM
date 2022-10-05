@@ -1,3 +1,28 @@
-main {
-   min-height: 200vh;
+.proveedores {
+   &__bg {
+      background: $forza-yellow;
+      min-height: 100vh;
+      padding: 7rem;
+   }
+
+   &__form {
+      background: $forza-grey;
+      padding: 2rem;
+
+      h2, label {
+         color: $forza-white;
+      }
+
+      label {
+         display: block;
+         margin: 0.2rem 0;
+      }
+
+      &--group {
+         margin: 2rem 0;
+      }
+
+
+   }
+
 }
