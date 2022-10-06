@@ -1,0 +1,52 @@
+#galeria {
+   background: $forza-yellow;
+   margin: 0;
+   padding: 5rem 0;
+   min-width: 100vh;
+
+   .galeria__{
+      &container {
+         max-width: 85%;
+         margin: auto;
+         
+         h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 3rem;
+         }
+
+         p {
+            line-height: 1rem;
+            margin-top: -1rem;
+            margin-bottom: 2rem;
+         }
+      }
+
+      &title {
+         font-size: 25px;
+         color: $forza-grey;
+         margin-bottom: 10px;
+         padding: 15px;
+      }
+
+      &img--container {
+         columns: 3 250px;
+         gap: 1rem;
+
+         img {
+            margin-bottom: 1rem;
+            width: 100%;
+            opacity: 0.9;
+            transition: 0.4s ease all;
+
+            &:hover {
+               transform: scale(1.02);
+               transform: rotate(1deg);
+               box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
+               opacity: 1;
+            }
+         }
+      }
+
+   }
+}

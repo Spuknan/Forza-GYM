@@ -736,6 +736,7 @@ nav.scrolled {
   background: #272727;
   color: #f5f5f5;
   width: 300px;
+  transition: 0.3s ease all;
 }
 #precios__cards .precios__cards--card .card-header {
   background: #000;
@@ -753,7 +754,54 @@ nav.scrolled {
 #precios__cards .precios__cards--card li {
   margin-top: 1rem;
 }
+#precios__cards .precios__cards--card:hover {
+  transform: scale(1.03);
+}
 #precios__cards .precios__button a button {
   margin: 0 2rem 2rem 2rem;
   width: 200px;
+}
+
+#galeria {
+  background: #f5bb00;
+  margin: 0;
+  padding: 5rem 0;
+  min-width: 100vh;
+}
+#galeria .galeria__container {
+  max-width: 85%;
+  margin: auto;
+}
+#galeria .galeria__container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3rem;
+}
+#galeria .galeria__container p {
+  line-height: 1rem;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+#galeria .galeria__title {
+  font-size: 25px;
+  color: #272727;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+#galeria .galeria__img--container {
+  -moz-columns: 3 250px;
+       columns: 3 250px;
+  gap: 1rem;
+}
+#galeria .galeria__img--container img {
+  margin-bottom: 1rem;
+  width: 100%;
+  opacity: 0.9;
+  transition: 0.4s ease all;
+}
+#galeria .galeria__img--container img:hover {
+  transform: scale(1.02);
+  transform: rotate(1deg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
+  opacity: 1;
 }/*# sourceMappingURL=main.css.map */
