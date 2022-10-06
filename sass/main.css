@@ -778,6 +778,7 @@ nav.scrolled {
   line-height: 3rem;
 }
 #galeria .galeria__container p {
+  font-size: 1.3rem;
   line-height: 1rem;
   margin-top: -1rem;
   margin-bottom: 2rem;
