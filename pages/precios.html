@@ -4,232 +4,268 @@
 <head>
    <meta charset="UTF-8" />
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Forza GYM</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Forza GYM | Vencé tus propios límites</title>
+   <meta name="description"
+      content="¡La primera clase es gratis! Elegí el plan que más se adapte a tus necesidades. Mensual, trimestral, anual.">
+   <meta name="keywords" content="gimnasio, lomas de zamora, deporte, fitness, entrenar">
+   <meta name=“robots” value=“index,follow”>
+   <!-- bootstrap -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+   <!-- styles -->
    <link rel="stylesheet" href="../sass/main.css" /> <!-- custom styles -->
+   <script src="../js/scrollreveal.js"></script> <!-- scroll reveal -->
+
+   <!-- favicons -->
+   <link rel="icon" type="image/png" href="../img/favicon16x16.png" sizes="16x16">
+   <link rel="icon" type="image/png" href="../img/favicon32x32.png" sizes="32x32">
+   <link rel="icon" type="image/png" href="../img/favicon96x96.png" sizes="96x96">
+   <link rel="apple-touch-icon" sizes="72x72" href="../img/touch-ipad.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="../img/touch-iphone.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="../img/touch-ipad-ret.png">
+
 </head>
 
 <body>
    <!-- NAVBAR -->
-   <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top px-5">
-      <div class="container-fluid">
-         <a class="navbar-brand" href="#">
-            <img src="../img/FORZALOGO.png" class="navbar__forzalogo" alt="" />
-         </a>
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-               <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-               </li>
-               <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                     aria-expanded="false">Actividades</a>
-                  <ul class="dropdown-menu">
-                     <li><a class="dropdown-item" href="#">Actividad 1</a></li>
-                     <li><a class="dropdown-item" href="#">Actividad 2</a></li>
-                     <li><a class="dropdown-item" href="#">Actividad 3</a></li>
-                  </ul>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#">Precios</a>
-               </li>
-               <a href="#">
-                  <button class="forza-btn-primary nav-item ms-4">
-                     <span class="custom-btn">Contacto</span>
-                  </button>
-               </a>
-            </ul>
+   <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+         <div class="container-fluid padding-def">
+            <a class="navbar-brand" href="../index.html">
+               <img src="../img/FORZALOGO.png" class="navbar__forzalogo" alt="logo forza gym" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+               aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+               <ul class="navbar-nav">
+                  <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="../pages/actividades.html" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Actividades</a>
+                     <ul class="dropdown-menu">
+                        <li>
+                           <a class="dropdown-item" href="../pages/actividades.html">Todas</a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="../pages/actividades.html#actividades__act1">Actividad 1</a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="../pages/actividades.html#actividades__act2">Actividad 2</a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="../pages/actividades.html#actividades__act3">Actividad 3</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" href="../pages/precios.html">Precios</a>
+                  </li>
+                  <a href="../index.html#contacto">
+                     <button class="forza-btn-primary nav-item ms-4">
+                        <span class="custom-btn">Contacto</span>
+                     </button>
+                  </a>
+               </ul>
+            </div>
          </div>
-      </div>
-   </nav>
+      </nav>
+   </header>
 
-   <main class="padding-def" id="precios__main">
-      <div class="precios__title">
-         <h3>LA PRIMERA CLASE ES</h3>
-         <h1>GRATIS</h1>
-         <a href="#">
-            <button class="btn-1-out">ANOTATE</button>
-         </a>
-      </div>
-      <div class="card__container">
-         <div class="precios__card-bg">
-            <div class="precios__card-head">
-               <h2>Precios 1</h2>
-            </div>
-            <div class="precios__info">
-               <div class="precios__info-item">
-                  <i class="fa-solid fa-check"></i>
-                  <p>Lorem ipsum dolor sit amet.</p>
+   <main>
+      <!-- HERO -->
+      <section id="precios__hero">
+         <div
+            class="container-fluid precios__hero padding-def text-md-start d-flex justify-content-center align-items-center">
+            <div class="col">
+               <div class="row">
+                  <h1 class="scroll-leftright">
+                     LA PRIMERA CLASE ES
+                     <div><span class="precios__hero--yellowtext">GRATIS</span></div>
+                  </h1>
                </div>
-               <div class="precios__info-item">
-                  <i class="fa-solid fa-check"></i>
-                  <p>Lorem ipsum dolor sit amet.</p>
-               </div>
-               <div class="precios__info-item">
-                  <i class="fa-solid fa-check"></i>
-                  <p>Lorem ipsum dolor sit amet.</p>
-               </div>
-               <div class="precios__info-item">
-                  <i class="fa-solid fa-circle-info"></i>
-                  <p>Lorem ipsum dolor sit amet.</p>
-               </div>
-               <div class="precios__info-item">
-                  <i class="fa-solid fa-xmark"></i>
-                  <p>Lorem ipsum dolor sit amet.</p>
-               </div>
-               <div class="precios__info-item">
-                  <i class="fa-solid fa-check"></i>
-                  <p>Lorem ipsum dolor sit amet.</p>
-               </div>
-               <div class="precios__info-item">
-                  <i class="fa-solid fa-circle-info"></i>
-                  <p>Lorem ipsum dolor sit amet.</p>
+               <div class="container-fluid my-2 scroll-leftright">
+                  <a href="#">
+                     <button class="forza-btn-primary">
+                        <span class="custom-btn">CTA 1</span>
+                     </button>
+                  </a>
+                  <a href="#">
+                     <button class="forza-btn-secondary ms-3">
+                        <span class="custom-btn">CTA 2</span>
+                     </button>
+                  </a>
                </div>
             </div>
-            <div class="precios__btn">
-               <a href="#">
-                  <button class="btn-2">LOREM</button>
-               </a>
-            </div>
+         </div>
+      </section>
 
+      <!-- CARDS -->
+      <section id="precios__cards" class="py-3">
+         <div class="container text-center py-5 precios__cards--title scroll-updown">
+            <h2 class="display-4">PRECIOS</h2>
+            <p class="lead">Conocé nuestros planes y asegurate de siempre tener un lugar para entrenar.</p>
          </div>
-         <div class="precios__card-bg">
-            <div class="precios__card-head">
-               <h2>Precios 1</h2>
-            </div>
-            <div class="precios__info">
-               <div class="precios__info-item">
-                  <i class="fa-solid fa-check"></i>
-                  <p>Lorem ipsum dolor sit amet.</p>
-               </div>
-               <div class="precios__info-item">
-                  <i class="fa-solid fa-check"></i>
-                  <p>Lorem ipsum dolor sit amet.</p>
-               </div>
-               <div class="precios__info-item">
-                  <i class="fa-solid fa-check"></i>
-                  <p>Lorem ipsum dolor sit amet.</p>
-               </div>
-               <div class="precios__info-item">
-                  <i class="fa-solid fa-circle-info"></i>
-                  <p>Lorem ipsum dolor sit amet.</p>
-               </div>
-               <div class="precios__info-item">
-                  <i class="fa-solid fa-xmark"></i>
-                  <p>Lorem ipsum dolor sit amet.</p>
-               </div>
-               <div class="precios__info-item">
-                  <i class="fa-solid fa-check"></i>
-                  <p>Lorem ipsum dolor sit amet.</p>
-               </div>
-               <div class="precios__info-item">
-                  <i class="fa-solid fa-circle-info"></i>
-                  <p>Lorem ipsum dolor sit amet.</p>
-               </div>
-            </div>
-            <div class="precios__btn">
-               <a href="#">
-                  <button class="btn-2">LOREM</button>
-               </a>
-            </div>
+   
+         <div class="container text-center">
+            <div class="row row-cols-1 row-cols-md-3">
+               <div class="col mb-4 d-flex align-items-stretch justify-content-center scroll-downup">
+                  <div class="card shadow-sm precios__cards--card ">
+                     <div class="card-header">
+                        <h4>Mensual</h4>
+                     </div>
+                     <div class="card-body">
+                        <h2 class="my-0 font-weight-normal">$100 <small>/mes</small></h2>
+                        <ul class="list-unstyled mt-3 mb-4 pt-3">
+                           <li>Beneficio 1</li>
+                           <li>Beneficio 2</li>
+                           <li>Beneficio 3</li>
 
-         </div>
-         <div class="precios__card-bg">
-            <div class="precios__card-head">
-               <h2>Precios 1</h2>
-            </div>
-            <div class="precios__info">
-               <div class="precios__info-item">
-                  <i class="fa-solid fa-check"></i>
-                  <p>Lorem ipsum dolor sit amet.</p>
+                        </ul>
+                     </div>
+                  </div>
                </div>
-               <div class="precios__info-item">
-                  <i class="fa-solid fa-check"></i>
-                  <p>Lorem ipsum dolor sit amet.</p>
+               <div class="col mb-4 d-flex align-items-stretch justify-content-center scroll-downup">
+                  <div class="card shadow-sm precios__cards--card">
+                     <div class="card-header">
+                        <h4>Mensual</h4>
+                     </div>
+                     <div class="card-body">
+                        <h2 class="my-0 font-weight-normal">$100 <small>/mes</small></h2>
+                        <ul class="list-unstyled mt-3 mb-4 pt-3">
+                           <li>Beneficio 1</li>
+                           <li>Beneficio 2</li>
+                           <li>Beneficio 3</li>
+                           <li>Beneficio 4</li>
+                           <li>Beneficio 5</li>
+                        </ul>
+                     </div>
+                  </div>
                </div>
-               <div class="precios__info-item">
-                  <i class="fa-solid fa-check"></i>
-                  <p>Lorem ipsum dolor sit amet.</p>
-               </div>
-               <div class="precios__info-item">
-                  <i class="fa-solid fa-circle-info"></i>
-                  <p>Lorem ipsum dolor sit amet.</p>
-               </div>
-               <div class="precios__info-item">
-                  <i class="fa-solid fa-xmark"></i>
-                  <p>Lorem ipsum dolor sit amet.</p>
-               </div>
-               <div class="precios__info-item">
-                  <i class="fa-solid fa-check"></i>
-                  <p>Lorem ipsum dolor sit amet.</p>
-               </div>
-               <div class="precios__info-item">
-                  <i class="fa-solid fa-circle-info"></i>
-                  <p>Lorem ipsum dolor sit amet.</p>
-               </div>
-            </div>
-            <div class="precios__btn">
-               <a href="#">
-                  <button class="btn-2">LOREM</button>
-               </a>
+               <div class="col mb-4 d-flex align-items-stretch justify-content-center scroll-downup">
+                  <div class="card shadow-sm precios__cards--card">
+                     <div class="card-header">
+                        <h4>Mensual</h4>
+                     </div>
+                     <div class="card-body">
+                        <h2 class="my-0 font-weight-normal">$100 <small>/mes</small></h2>
+                        <ul class="list-unstyled mt-3 mb-4 pt-3">
+                           <li>Beneficio 1</li>
+                           <li>Beneficio 2</li>
+                           <li>Beneficio 3</li>
+                           <li>Beneficio 4</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>               
             </div>
          </div>
-      </div>
+
+         <div class="container text-center py-5 precios__button scroll-fade">
+            <a href="#">
+               <button class="forza-btn-primary-light">CLASE GRATIS</button>
+            </a>
+            
+            <a href="../index.html#contacto">
+               <button class="forza-btn-secondary-light">CONTACTANOS</button>
+            </a>
+         </div>
+      </section>
+
+
+
+
+
+
    </main>
 
-   <section id="pago" class="padding-def">
-      <h2>MÉTODOS DE PAGO</h2>
-      <div class="pago__img-container">
-         <img src="../img/visa_logo.png" alt="visa">
-         <img src="../img/mastercard_logo.png" alt="visa">
-         <img src="../img/mercadopago_logo.png" alt="visa">
-         <img src="../img/paypal_logo.png" alt="visa">
-         <img src="../img/transferencia_logo.png" alt="visa">
+   <!-- FOOTER -->
+   <div class="container-fluid text-light padding-def footer__bg">
+      <div class="container-fluid px-5">
+         <footer class="py-5">
+            <div class="row d-flex justify-content-between">
+               <div class="col-6 col-md-2 mb-4 footer__links">
+                  <h5 class="fw-bold">Mapa del sitio</h5>
+                  <a href="./index.html">
+                     <p>Inicio</p>
+                  </a>
+                  <a href="./pages/nosotros.html">
+                     <p>Nosotros</p>
+                  </a>
+                  <a href="#" class="d-none">
+                     <p>Galería</p>
+                  </a>
+                  <a href="#">
+                     <p>Precios</p>
+                  </a>
+                  <a href="./pages/proveedores.html">
+                     <p>Proveedores</p>
+                  </a>
+               </div>
+               <div class="col-6 col-md-2 mb-4 footer__links">
+                  <h5 class="fw-bold">Actividades</h5>
+                  <a href="./pages/actividades.html#actividades__act1">
+                     <p>Actividad 1</p>
+                  </a>
+                  <a href="./pages/actividades.html#actividades__act2">
+                     <p>Actividad 2</p>
+                  </a>
+                  <a href="./pages/actividades.html#actividades__act3">
+                     <p>Actividad 3</p>
+                  </a>
+               </div>
+               <div class="col-md-6 offset-md-1 mb-4 align-self-center">
+                  <form class="text-md-start" style="text-align: center;">
+                     <h5>Suscribite a nuestro Newsletter!</h5>
+                     <p>
+                        Recibí todas las novedades y las mejores ofertas todas las
+                        semanas!
+                     </p>
+                     <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email</label>
+                        <input id="newsletter1" type="email" class="form-control" placeholder="Email address" />
+                        <button class="custom-btn forza-btn-primary" type="button">
+                           Enviar
+                        </button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top footer__copy">
+               <p>© 2022 ForzaGYM. Todos los derechos reservados.</p>
+               <ul class="list-unstyled d-flex">
+                  <li>
+                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="fa-solid fa-phone"></i></a>
+                  </li>
+               </ul>
+            </div>
+         </footer>
       </div>
-   </section>
-
-   <footer class="padding-def">
-      <div class="footer__socials">
-         <div class="footer__socials-item">
-            <a href="#">
-               <i class="fa-brands fa-instagram"></i>
-               <span>instagram.com/forzagym.ldz</span>
-            </a>
-         </div>
-         <div class="footer__socials-item">
-            <a href="#">
-               <i class="fa-solid fa-phone"></i>
-               <span>+ 549 11 5035 8772</span>
-            </a>
-         </div>
-         <div class="footer__socials-item">
-            <a href="#">
-               <i class="fa-solid fa-location-dot"></i>
-               <span>Hipólito Yrigoyen 1234 - Lomas de Zamora</span>
-            </a>
-         </div>
-         <div class="footer__socials-item">
-            <a href="../pages/proveedores.html">
-               <button class="btn-1-out"><i class="fa-solid fa-chalkboard-user"></i>Proveedores</button>
-            </a>
-         </div>
-      </div>
-      <div class="divider"></div>
-      <div class="footer__copy">
-         <p>
-         <p>ForzaGYM&copy; 2022</p>
-         </p>
-      </div>
-   </footer>
+   </div>
+   <script src="../js/navbar-scroll.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/523b2e5bc2.js" crossorigin="anonymous"></script>
+   <script src="../js/scrollreveal-custom.js"></script>
 </body>
 
 </html>

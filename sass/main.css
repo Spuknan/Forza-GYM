@@ -705,4 +705,55 @@ nav.scrolled {
 }
 .proveedores__form--group {
   margin: 2rem 0;
+}
+
+#precios__hero .precios__hero {
+  background: url(../img/precios_hero.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 50vh;
+  box-shadow: inset 1000px 1000px rgba(0, 0, 0, 0.7);
+}
+#precios__hero .precios__hero h1 {
+  color: #f5f5f5;
+  font-weight: 700;
+}
+#precios__hero .precios__hero h1 .precios__hero--yellowtext {
+  color: #f5bb00;
+  font-size: 4rem;
+}
+
+#precios__cards {
+  background: rgb(227, 176, 0);
+  background: radial-gradient(circle, rgb(227, 176, 0) 0%, rgb(196, 152, 0) 100%);
+}
+#precios__cards .precios__cards--title h2 {
+  font-weight: 700;
+  color: #272727;
+}
+#precios__cards .precios__cards--card {
+  border-radius: 0;
+  background: #272727;
+  color: #f5f5f5;
+  width: 300px;
+}
+#precios__cards .precios__cards--card .card-header {
+  background: #000;
+  color: #f5bb00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#precios__cards .precios__cards--card .card-header h4 {
+  margin: 0;
+}
+#precios__cards .precios__cards--card h2 {
+  font-weight: 600;
+}
+#precios__cards .precios__cards--card li {
+  margin-top: 1rem;
+}
+#precios__cards .precios__button a button {
+  margin: 0 2rem 2rem 2rem;
+  width: 200px;
 }/*# sourceMappingURL=main.css.map */

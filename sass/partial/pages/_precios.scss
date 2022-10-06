@@ -1,0 +1,63 @@
+#precios__hero {
+   .precios__hero {
+      background: url(../img/precios_hero.jpg);
+      object-fit: cover;
+      min-height: 50vh;
+      box-shadow: inset 1000px 1000px rgba(0, 0, 0, 0.7);
+
+      h1 {
+         color: $forza-white;
+         font-weight: 700;
+
+         .precios__hero--yellowtext {
+            color: $forza-yellow;
+            font-size: 4rem;
+         }
+      }
+   }
+}
+
+#precios__cards {
+   background: rgb(227, 176, 0);
+   background: radial-gradient(circle, rgba(227, 176, 0, 1) 0%, rgba(196, 152, 0, 1) 100%);
+
+   .precios__cards--title {
+      h2 {
+         font-weight: 700;
+         color: $forza-grey;
+
+      }
+   }
+
+   .precios__cards--card {
+      border-radius: 0;
+      background: $forza-grey;
+      color: $forza-white;
+      width: 300px;
+
+      .card-header {
+         background: #000;
+         color: $forza-yellow;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+         h4 {
+            margin: 0;
+         }
+      }
+
+      h2 {
+         font-weight: 600;
+      }
+
+      li {
+         margin-top: 1rem;
+      }
+   }
+
+   .precios__button a button {
+      margin: 0 2rem 2rem 2rem;
+      width: 200px;
+   }
+}
