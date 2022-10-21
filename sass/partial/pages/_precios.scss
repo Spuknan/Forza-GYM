@@ -54,10 +54,18 @@
 
       li {
          margin-top: 1rem;
+         text-align: left;
       }
 
       &:hover {
          transform: scale(1.03);
+      }
+
+      p {
+         font-size: 0.8rem;
+         line-height: 0.8rem;
+         margin: 0;
+         padding: 0;
       }
    }
 

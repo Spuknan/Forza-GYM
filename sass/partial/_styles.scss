@@ -16,11 +16,18 @@
    color: $forza-white;
 }
 
+@media (max-width: 768px) {
+   .nosotros__hero h1 {
+      font-size: 2rem;
+   }
+}
+
 .nosotros__hero--yellowtext {
    color: $forza-yellow;
 }
 
 /* cards */
+
 #nosotros__cards {
    background: rgb(227, 176, 0);
    background: radial-gradient(circle,

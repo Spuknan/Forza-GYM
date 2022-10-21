@@ -65,6 +65,11 @@ a {
   color: #f5f5f5;
 }
 
+@media (max-width: 768px) {
+  .nosotros__hero h1 {
+    font-size: 2rem;
+  }
+}
 .nosotros__hero--yellowtext {
   color: #f5bb00;
 }
@@ -483,6 +488,11 @@ nav.scrolled {
   font-weight: 700;
   color: #f5f5f5;
 }
+@media (max-width: 768px) {
+  .index__hero h1 {
+    font-size: 2rem;
+  }
+}
 .index__hero .index__hero--yellowtext {
   color: #f5bb00;
 }
@@ -586,7 +596,7 @@ nav.scrolled {
   align-items: center;
   margin: 0;
   padding: 0;
-  height: 200px;
+  height: 300px;
 }
 .index__app--container .index__app--applogo {
   max-height: 50px;
@@ -598,7 +608,7 @@ nav.scrolled {
 }
 .index__app--container .index__app--mockup {
   position: relative;
-  height: 300px;
+  height: 400px;
   top: -50px;
 }
 @media (max-width: 992px) {
@@ -753,9 +763,16 @@ nav.scrolled {
 }
 #precios__cards .precios__cards--card li {
   margin-top: 1rem;
+  text-align: left;
 }
 #precios__cards .precios__cards--card:hover {
   transform: scale(1.03);
+}
+#precios__cards .precios__cards--card p {
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  margin: 0;
+  padding: 0;
 }
 #precios__cards .precios__button a button {
   margin: 0 2rem 2rem 2rem;
