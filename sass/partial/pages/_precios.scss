@@ -17,6 +17,12 @@
    }
 }
 
+@media (max-width: 400px) {
+   .precios__hero {
+      height: 100vh;
+   }
+}
+
 #precios__cards {
    background: rgb(227, 176, 0);
    background: radial-gradient(circle, rgba(227, 176, 0, 1) 0%, rgba(196, 152, 0, 1) 100%);

@@ -253,6 +253,7 @@ a {
 /* buttons */
 button {
   padding: 0.3rem 2rem;
+  margin: 0.5rem 0;
 }
 
 .custom-btn {
@@ -619,7 +620,7 @@ nav.scrolled {
     justify-content: center;
     text-align: center;
     height: auto;
-    padding: 2rem 0;
+    padding: 2rem;
   }
 }
 
@@ -733,6 +734,11 @@ nav.scrolled {
   font-size: 4rem;
 }
 
+@media (max-width: 400px) {
+  .precios__hero {
+    height: 100vh;
+  }
+}
 #precios__cards {
   background: rgb(227, 176, 0);
   background: radial-gradient(circle, rgb(227, 176, 0) 0%, rgb(196, 152, 0) 100%);
@@ -781,45 +787,30 @@ nav.scrolled {
 
 #galeria {
   background: #f5bb00;
-  margin: 0;
-  padding: 5rem 0;
-  min-width: 100vh;
+  padding: 5rem;
 }
-#galeria .galeria__container {
-  max-width: 85%;
-  margin: auto;
-}
-#galeria .galeria__container h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 3rem;
-}
-#galeria .galeria__container p {
-  font-size: 1.3rem;
-  line-height: 1rem;
-  margin-top: -1rem;
-  margin-bottom: 2rem;
-}
-#galeria .galeria__title {
-  font-size: 25px;
-  color: #272727;
-  margin-bottom: 10px;
-  padding: 15px;
-}
-#galeria .galeria__img--container {
-  -moz-columns: 3 250px;
-       columns: 3 250px;
-  gap: 1rem;
-}
-#galeria .galeria__img--container img {
-  margin-bottom: 1rem;
+#galeria img {
   width: 100%;
-  opacity: 0.9;
-  transition: 0.4s ease all;
+  transition: 0.3s ease;
 }
-#galeria .galeria__img--container img:hover {
-  transform: scale(1.02);
-  transform: rotate(1deg);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
-  opacity: 1;
+#galeria img:hover {
+  transform: scale(1.01);
+}
+#galeria .row {
+  display: flex;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+#galeria .col {
+  flex: 50%;
+  padding: 1rem;
+}
+#galeria .col img {
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  #galeria .col {
+    flex: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

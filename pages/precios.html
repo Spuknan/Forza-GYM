@@ -85,7 +85,7 @@
                         </li>
                      </ul>
                   </li>
-                  
+
                   <li class="nav-item">
                      <a class="nav-link active" href="./precios.html">Precios</a>
                   </li>
@@ -113,13 +113,14 @@
                   </h1>
                </div>
                <div class="container-fluid my-2 scroll-leftright">
-                  <a href="#">
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSc5_0VHPKaR9YsB-hZ6y8H8dyYT3j4uwfmzIOI8ynkEJODjZw/viewform"
+                     target="_blank">
                      <button class="forza-btn-primary">
                         <span class="custom-btn">Formulario</span>
                      </button>
                   </a>
-                  <a href="#">
-                     <button class="forza-btn-secondary ms-3">
+                  <a href="./actividades.html">
+                     <button class="forza-btn-secondary">
                         <span class="custom-btn">Actividades</span>
                      </button>
                   </a>
@@ -134,7 +135,7 @@
             <h2 class="display-4">PRECIOS</h2>
             <p class="lead">Conocé nuestros planes y asegurate de siempre tener un lugar para entrenar.</p>
          </div>
-   
+
          <div class="container text-center">
             <div class="row row-cols-1 row-cols-md-3">
                <div class="col mb-4 d-flex align-items-stretch justify-content-center scroll-downup">
@@ -188,15 +189,16 @@
                         </ul>
                      </div>
                   </div>
-               </div>               
+               </div>
             </div>
          </div>
 
          <div class="container text-center py-5 precios__button scroll-fade">
-            <a href="#">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc5_0VHPKaR9YsB-hZ6y8H8dyYT3j4uwfmzIOI8ynkEJODjZw/viewform"
+               target="_blank">
                <button class="forza-btn-primary-light">CLASE GRATIS</button>
             </a>
-            
+
             <a href="../index.html#contacto">
                <button class="forza-btn-secondary-light">CONTACTANOS</button>
             </a>
@@ -281,16 +283,15 @@
                <p>© 2022 ForzaGYM. Todos los derechos reservados.</p>
                <ul class="list-unstyled d-flex">
                   <li>
-                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                     <a href="https://instagram.com/forzagym.ldz" target="_blank"><i
+                           class="fa-brands fa-instagram"></i></a>
                   </li>
                   <li>
-                     <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                     <a href="https://wa.me/5491140699998" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                   </li>
                   <li>
-                     <a href="#"><i class="fa-solid fa-location-dot"></i></a>
-                  </li>
-                  <li>
-                     <a href="#"><i class="fa-solid fa-phone"></i></a>
+                     <a href="https://goo.gl/maps/sXNUoBgyYFsReEPT9" target="_blank"><i
+                           class="fa-solid fa-location-dot"></i></a>
                   </li>
                </ul>
             </div>
@@ -304,6 +305,42 @@
       crossorigin="anonymous"></script>
    <script src="https://kit.fontawesome.com/523b2e5bc2.js" crossorigin="anonymous"></script>
    <script src="../js/scrollreveal-custom.js"></script>
+   <script>
+      var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?91988';
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = url;
+      var options = {
+         "enabled": true,
+         "chatButtonSetting": {
+            "backgroundColor": "#4dc247",
+            "ctaText": "",
+            "borderRadius": "25",
+            "marginLeft": "0",
+            "marginBottom": "50",
+            "marginRight": "50",
+            "position": "right"
+         },
+         "brandSetting": {
+            "brandName": "Forza Gym",
+            "brandSubTitle": "Entrená más allá de tus límites",
+            "brandImg": "https://github.com/Spuknan/ForzaGYM.github.io/blob/main/img/favicon96x96.png?raw=true",
+            "welcomeText": "Hola! Como podemos ayudarte?",
+            "messageText": "Hola, tengo una consulta sobre las clases.",
+            "backgroundColor": "#0a5f54",
+            "ctaText": "Comenzar chat",
+            "borderRadius": "25",
+            "autoShow": false,
+            "phoneNumber": "5491140699998"
+         }
+      };
+      s.onload = function () {
+         CreateWhatsappChatWidget(options);
+      };
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+   </script>
 </body>
 
 </html>
