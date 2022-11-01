@@ -1,12 +1,10 @@
+# Forza gym | Entrega final | CoderHouse
 
-# Forza gym | Pre-entrega 2 | CoderHouse
+Despues de todo este tiempo, ya está listo el sitio "final". El proyecto aun debe revisarse con el cliente y se deben ajustar ciertas cosas de la información desplegada. 
 
-Este proyecto esta siendo desarrollado para el curso de Desarrollo Web de CoderHouse.
-La principal intención de esta web es dar soporte a un gimnasio ubicado en Lomas de Zamora.
+Por lo pronto, el sitio es full responsive y se adecúa a los estilos planteados para la composición de la marca.
 
+Actualmente, se encuentran ya subidos los "página en construccion" para la web de forza gym y forza med.
 
-
-Solo se encuentran habilitadas las páginas correspondientes a la pre-entrega 2, las cuáles fueron adaptadas para ser responsive, utilizando el framework Bootstrap.
-
-Se utilizaron algunas librerías y código js personalizado para dar funcionalidad a ciertos elementos.
-
+https://forzagym.com.ar
+https://forzamed.com.ar
